@@ -1,0 +1,283 @@
+@font-face{
+
+font-family:Orbitron;
+
+src:url("../fontes/OrbitronMedium.ttf");
+
+}
+
+*{
+
+margin:0;
+
+padding:0;
+
+box-sizing:border-box;
+
+}
+
+body{
+
+background:black;
+
+color:#00ff00;
+
+font-family:Orbitron;
+
+}
+
+header{
+
+background:#00ff00;
+
+height:90px;
+
+display:flex;
+
+align-items:center;
+
+padding:0 30px;
+
+}
+
+header h1{
+
+margin:auto;
+
+color:black;
+
+}
+
+.voltar{
+
+color:black;
+
+text-decoration:none;
+
+border:2px solid black;
+
+padding:10px 18px;
+
+transition:.25s;
+
+}
+
+.voltar:hover{
+
+background:black;
+
+color:#00ff00;
+
+}
+
+.perfil{
+
+width:1200px;
+
+margin:40px auto;
+
+display:flex;
+
+gap:40px;
+
+align-items:flex-start;
+
+}
+
+.perfil img{
+
+width:260px;
+
+border:3px solid #00ff00;
+
+}
+
+.informacoes{
+
+flex:1;
+
+}
+
+.informacoes h2{
+
+margin-bottom:25px;
+
+font-size:34px;
+
+}
+
+.informacoes p{
+
+margin-bottom:12px;
+
+line-height:1.6;
+
+}
+
+.quadro{
+
+width:1200px;
+
+margin:50px auto;
+
+border:2px solid #00ff00;
+
+padding:30px;
+
+background:rgba(0,255,0,.03);
+
+}
+
+.quadro pre{
+
+white-space:pre-wrap;
+
+font-family:Orbitron;
+
+line-height:1.8;
+
+font-size:17px;
+
+}
+
+.painel{
+
+border:2px solid #00ff00;
+
+padding:20px;
+
+background:rgba(0,255,0,.03);
+
+margin-bottom:30px;
+
+}
+
+.linha{
+
+display:flex;
+
+justify-content:space-between;
+
+margin:12px 0;
+
+}
+
+.verde{
+
+color:#00ff00;
+
+text-shadow:0 0 10px #00ff00;
+
+}
+
+.risco{
+
+letter-spacing:2px;
+
+text-shadow:0 0 10px #00ff00;
+
+}
+
+/*========================*/
+/* HUD */
+/*========================*/
+
+.hud{
+
+    pointer-events:none;
+
+}
+
+.hudTopLeft{
+
+    position:fixed;
+
+    left:20px;
+
+    top:110px;
+
+    font-size:13px;
+
+    opacity:.55;
+
+}
+
+.hudTopRight{
+
+    position:fixed;
+
+    right:20px;
+
+    top:110px;
+
+    text-align:right;
+
+    font-size:13px;
+
+    opacity:.55;
+
+}
+
+.hudBottomLeft{
+
+    position:fixed;
+
+    left:20px;
+
+    bottom:20px;
+
+    font-size:13px;
+
+    opacity:.55;
+
+}
+
+.hudBottomRight{
+
+    position:fixed;
+
+    right:20px;
+
+    bottom:20px;
+
+    text-align:right;
+
+    font-size:13px;
+
+    opacity:.55;
+
+}
+
+.barra{
+
+    width:140px;
+
+    height:12px;
+
+    border:2px solid #00ff00;
+
+    margin:8px 0;
+
+}
+
+.nivel{
+
+    width:100%;
+
+    height:100%;
+
+    background:#00ff00;
+
+    animation:pulse 2s infinite;
+
+}
+
+@keyframes pulse{
+
+    50%{
+
+        opacity:.45;
+
+    }
+
+}

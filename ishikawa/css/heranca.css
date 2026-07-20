@@ -1,0 +1,254 @@
+@font-face{
+
+    font-family:Orbitron;
+
+    src:url("../../fontes/OrbitronMedium.ttf");
+
+}
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    background:#050000;
+
+    color:#ff0000;
+
+    font-family:Orbitron;
+
+    overflow-x:hidden;
+
+}
+
+/*========================*/
+
+main{
+
+    width:900px;
+
+    max-width:90%;
+
+    margin:80px auto;
+
+}
+
+/*========================*/
+
+h1{
+
+    text-align:center;
+
+    letter-spacing:8px;
+
+    margin-bottom:60px;
+
+    text-shadow:0 0 20px red;
+
+}
+
+/*========================*/
+
+#texto{
+
+    white-space:pre-wrap;
+
+    line-height:2;
+
+    font-size:20px;
+
+    min-height:400px;
+
+}
+
+/*========================*/
+
+#aceitar{
+
+    display:none;
+
+    margin:80px auto;
+
+    padding:18px 45px;
+
+    background:black;
+
+    border:2px solid #ff0000;
+
+    color:#ff0000;
+
+    font-family:Orbitron;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+#aceitar:hover{
+
+    background:#ff0000;
+
+    color:black;
+
+    box-shadow:0 0 20px red;
+
+}
+
+/*========================*/
+/* Scanlines */
+
+.scanlines{
+
+    position:fixed;
+
+    left:0;
+
+    top:0;
+
+    width:100%;
+
+    height:100%;
+
+    pointer-events:none;
+
+    background:
+
+    repeating-linear-gradient(
+
+        0deg,
+
+        rgba(255,255,255,.02) 0px,
+
+        rgba(255,255,255,.02) 2px,
+
+        transparent 3px,
+
+        transparent 5px
+
+    );
+
+    opacity:.25;
+
+}
+
+/*========================*/
+
+.vinheta{
+
+    position:fixed;
+
+    left:0;
+
+    top:0;
+
+    width:100%;
+
+    height:100%;
+
+    pointer-events:none;
+
+    box-shadow:
+
+    inset 0 0 250px rgba(255,0,0,.20);
+
+}
+
+/*========================*/
+
+.glitch{
+
+    animation:glitch .15s;
+
+}
+
+@keyframes glitch{
+
+    0%{
+
+        transform:translate(0);
+
+    }
+
+    25%{
+
+        transform:translate(-2px,2px);
+
+    }
+
+    50%{
+
+        transform:translate(2px,-2px);
+
+    }
+
+    75%{
+
+        transform:translate(-2px,-1px);
+
+    }
+
+    100%{
+
+        transform:translate(0);
+
+    }
+
+}
+
+/*========================*/
+
+.flicker{
+
+    animation:flicker .08s;
+
+}
+
+@keyframes flicker{
+
+    0%{
+
+        opacity:1;
+
+    }
+
+    50%{
+
+        opacity:.75;
+
+    }
+
+    100%{
+
+        opacity:1;
+
+    }
+
+}
+
+#status{
+
+    text-align:center;
+
+    margin-bottom:40px;
+
+    color:#ff0000;
+
+    letter-spacing:3px;
+
+    opacity:.8;
+
+}

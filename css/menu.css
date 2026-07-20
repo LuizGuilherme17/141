@@ -1,0 +1,249 @@
+@font-face{
+
+    font-family:Orbitron;
+
+    src:url("../fontes/OrbitronMedium.ttf");
+
+}
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+body{
+
+    background:black;
+
+    color:#00ff00;
+
+    font-family:Orbitron;
+
+}
+
+/*========================*/
+
+header{
+
+    background:#00ff00;
+
+    color:black;
+
+    height:90px;
+
+    display:flex;
+
+    align-items:center;
+
+    padding-left:30px;
+
+    gap:20px;
+
+}
+
+.logo{
+
+    width:60px;
+
+    height:60px;
+
+    object-fit:cover;
+
+    border:2px solid black;
+
+}
+
+/*========================*/
+
+.container{
+
+    width:500px;
+
+    margin:auto;
+
+    margin-top:70px;
+
+    text-align:center;
+
+}
+
+.container h2{
+
+    margin-bottom:40px;
+
+}
+
+/*========================*/
+
+.status{
+
+    width:100%;
+
+    border:2px solid #00ff00;
+
+    padding:20px;
+
+    margin-bottom:40px;
+
+    background:rgba(0,255,0,.03);
+
+}
+
+.linha{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin:12px 0;
+
+    letter-spacing:2px;
+
+}
+
+.linha span:first-child{
+
+    color:#00ff00;
+
+}
+
+.linha span:last-child{
+
+    color:#00ff00;
+
+    text-shadow:0 0 5px #00ff00;
+
+}
+
+.botaoMenu{
+
+    display:block;
+
+    width:100%;
+
+    margin-bottom:20px;
+
+    padding:18px;
+
+    text-decoration:none;
+
+    color:#00ff00;
+
+    border:2px solid #00ff00;
+
+    transition:.25s;
+
+}
+
+.botaoMenu:hover{
+
+    background:#00ff00;
+
+    color:black;
+
+}
+
+/*========================*/
+
+.espaco{
+
+    height:900px;
+
+}
+
+/*========================*/
+
+#botaoSecreto{
+
+    display:block;
+
+    width:fit-content;
+
+    margin:auto;
+
+    margin-bottom:80px;
+
+    padding:15px 35px;
+
+    text-decoration:none;
+
+    color:#ff0000;
+
+    border:2px solid #880000;
+
+    animation:
+
+        brilho 1.8s infinite,
+
+        glitch .15s infinite;
+
+}
+
+#botaoSecreto:hover{
+
+    background:#220000;
+
+    box-shadow:
+
+        0 0 10px red,
+
+        0 0 25px red;
+
+}
+
+/*========================*/
+
+@keyframes brilho{
+
+    50%{
+
+        opacity:.35;
+
+    }
+
+}
+
+@keyframes glitch{
+
+    0%,94%{
+
+        transform:translate(0);
+
+    }
+
+    95%{
+
+        transform:translate(-2px,1px);
+
+    }
+
+    96%{
+
+        transform:translate(2px,-1px);
+
+    }
+
+    97%{
+
+        transform:translate(-1px,2px);
+
+    }
+
+    98%{
+
+        transform:translate(1px,-2px);
+
+    }
+
+    100%{
+
+        transform:translate(0);
+
+    }
+
+}
